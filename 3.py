@@ -19,4 +19,6 @@ def SortArray(text: str):
 inputArray = input()
 
 
+
+
 print(SortArray(inputArray))
