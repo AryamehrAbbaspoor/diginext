@@ -1,13 +1,18 @@
-### Function: 
+# Function:
 def Pull(x, y):
     while len(x) < y:
         x += x
-    print(x[:y])
+    msg = (x[:y])
+    aCount = 0
+    for i in msg:
+        if i.lower() == 'a':
+            aCount += 1
+    return aCount
 
-### Input: 
+
+# Input:
 inputString = input("Enter String: ")
 inputNum = int(input("Enter Number: "))
 
-### Call Function: 
-Pull(inputString, inputNum)
-
+# Call Function:
+print(Pull(inputString, inputNum))
